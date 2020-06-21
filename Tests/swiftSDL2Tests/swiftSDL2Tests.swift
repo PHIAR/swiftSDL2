@@ -21,6 +21,7 @@ internal final class swiftSDL2Tests: XCTestCase {
                 break
             }
 
+            window.updateWindowSurface()
             return true
         }
     }
