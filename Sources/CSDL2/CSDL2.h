@@ -15,6 +15,64 @@ typedef enum sdl2_flags_e {
     sdl2_flags_video = SDL_INIT_VIDEO,
 } sdl2_flags_e;
 
+typedef enum sdl2_pixelformat_e {
+    sdl2_pixel_format_unknown = SDL_PIXELFORMAT_UNKNOWN,
+    sdl2_pixel_format_index1_lsb = SDL_PIXELFORMAT_INDEX1LSB,
+    sdl2_pixel_format_index1_msb = SDL_PIXELFORMAT_INDEX1MSB,
+    sdl2_pixel_format_index4_lsb = SDL_PIXELFORMAT_INDEX4LSB,
+    sdl2_pixel_format_index4_msb = SDL_PIXELFORMAT_INDEX4MSB,
+    sdl2_pixel_format_index8 = SDL_PIXELFORMAT_INDEX8,
+    sdl2_pixel_format_rgb332 = SDL_PIXELFORMAT_RGB332,
+    sdl2_pixel_format_rgb444 = SDL_PIXELFORMAT_RGB444,
+    sdl2_pixel_format_rgb555 = SDL_PIXELFORMAT_RGB555,
+    sdl2_pixel_format_bgr555 = SDL_PIXELFORMAT_BGR555,
+    sdl2_pixel_format_argb4444 = SDL_PIXELFORMAT_ARGB4444,
+    sdl2_pixel_format_rgba4444 = SDL_PIXELFORMAT_RGBA4444,
+    sdl2_pixel_format_abgr4444 = SDL_PIXELFORMAT_ABGR4444,
+    sdl2_pixel_format_bgra4444 = SDL_PIXELFORMAT_BGRA4444,
+    sdl2_pixel_format_argb1555 = SDL_PIXELFORMAT_ARGB1555,
+    sdl2_pixel_format_rgba5551 = SDL_PIXELFORMAT_RGBA5551,
+    sdl2_pixel_format_abgr1555 = SDL_PIXELFORMAT_ABGR1555,
+    sdl2_pixel_format_bgra5551 = SDL_PIXELFORMAT_BGRA5551,
+    sdl2_pixel_format_rgb565 = SDL_PIXELFORMAT_RGB565,
+    sdl2_pixel_format_bgr565 = SDL_PIXELFORMAT_BGR565,
+    sdl2_pixel_format_rgb24 = SDL_PIXELFORMAT_RGB24,
+    sdl2_pixel_format_bgr24 = SDL_PIXELFORMAT_BGR24,
+    sdl2_pixel_format_rgb888 = SDL_PIXELFORMAT_RGB888,
+    sdl2_pixel_format_rgbx888 = SDL_PIXELFORMAT_RGBX8888,
+    sdl2_pixel_format_bgr888 = SDL_PIXELFORMAT_BGR888,
+    sdl2_pixel_format_bgrx8888 = SDL_PIXELFORMAT_BGRX8888,
+    sdl2_pixel_format_argb8888 = SDL_PIXELFORMAT_ARGB8888,
+    sdl2_pixel_format_rgba8888 = SDL_PIXELFORMAT_RGBA8888,
+    sdl2_pixel_format_abgr8888 = SDL_PIXELFORMAT_ABGR8888,
+    sdl2_pixel_format_bgra8888 = SDL_PIXELFORMAT_BGRA8888,
+    sdl2_pixel_format_argb2101010 = SDL_PIXELFORMAT_ARGB2101010,
+    sdl2_pixel_format_rgba32 = SDL_PIXELFORMAT_RGBA32,
+    sdl2_pixel_format_argb32 = SDL_PIXELFORMAT_ARGB32,
+    sdl2_pixel_format_bgra32 = SDL_PIXELFORMAT_BGRA32,
+    sdl2_pixel_format_abgr32 = SDL_PIXELFORMAT_ABGR32,
+    sdl2_pixel_format_yv12 = SDL_PIXELFORMAT_YV12,
+    sdl2_pixel_format_iyuv = SDL_PIXELFORMAT_IYUV,
+    sdl2_pixel_format_yuv2 = SDL_PIXELFORMAT_YUY2,
+    sdl2_pixel_format_uyvy = SDL_PIXELFORMAT_UYVY,
+    sdl2_pixel_format_yvyu = SDL_PIXELFORMAT_YVYU,
+    sdl2_pixel_format_nv12 = SDL_PIXELFORMAT_NV12,
+    sdl2_pixel_format_nv21 = SDL_PIXELFORMAT_NV21
+} sdl2_pixelformat_e;
+
+typedef enum sdl2_renderer_flags_e {
+    sdl2_renderer_flags_accelerated = SDL_RENDERER_ACCELERATED,
+    sdl2_renderer_flags_present_vsync = SDL_RENDERER_PRESENTVSYNC,
+    sdl2_renderer_flags_software = SDL_RENDERER_SOFTWARE,
+    sdl2_renderer_flags_target_texture = SDL_RENDERER_TARGETTEXTURE,
+} sdl2_renderer_flags_e;
+
+typedef enum sdl2_texture_access_e {
+    sdl2_texture_access_static = SDL_TEXTUREACCESS_STATIC,
+    sdl2_texture_access_streaming = SDL_TEXTUREACCESS_STREAMING,
+    sdl2_texture_access_target = SDL_TEXTUREACCESS_TARGET,
+} sdl2_texture_access_e;
+
 typedef enum sdl2_window_flags_e {
     sdl2_window_flags_borderless = SDL_WINDOW_BORDERLESS,
     sdl2_window_flags_foreign = SDL_WINDOW_FOREIGN,

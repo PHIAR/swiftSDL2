@@ -2,7 +2,7 @@ import CSDL2
 import Foundation
 
 public final class Window {
-    private typealias SDL_Window = OpaquePointer
+    internal typealias SDL_Window = OpaquePointer
 
     public struct Flags: OptionSet {
         public static let highDPI = Flags(rawValue: 0x00001)
@@ -144,6 +144,13 @@ public final class Window {
 
     deinit {
         SDL_DestroyWindow(self.window)
+    }
+
+    public func createRenderer(index: Int,
+                               flags: Renderer.Flags = Renderer.Flags(rawValue: 0)) -> Renderer {
+        return Renderer(window: self.window,
+                        index: index,
+                        flags: flags)
     }
 
     public func updateWindowSurface() {
