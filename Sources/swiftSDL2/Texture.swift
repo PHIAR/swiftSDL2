@@ -54,7 +54,7 @@ public final class Texture {
         public static let abgr32 = Pixelformat(rawValue: Int(sdl2_pixelformat_abgr32.rawValue))
         public static let yv12 = Pixelformat(rawValue: Int(sdl2_pixelformat_yv12.rawValue))
         public static let iyuv = Pixelformat(rawValue: Int(sdl2_pixelformat_iyuv.rawValue))
-        public static let yuv2 = Pixelformat(rawValue: Int(sdl2_pixelformat_yuv2.rawValue))
+        public static let yuy2 = Pixelformat(rawValue: Int(sdl2_pixelformat_yuy2.rawValue))
         public static let uyvy = Pixelformat(rawValue: Int(sdl2_pixelformat_uyvy.rawValue))
         public static let yvyu = Pixelformat(rawValue: Int(sdl2_pixelformat_yvyu.rawValue))
         public static let nv12 = Pixelformat(rawValue: Int(sdl2_pixelformat_nv12.rawValue))

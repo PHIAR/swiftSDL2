@@ -59,7 +59,7 @@ typedef enum sdl2_pixelformat_e {
     sdl2_pixelformat_abgr32 = SDL_PIXELFORMAT_ABGR32,
     sdl2_pixelformat_yv12 = SDL_PIXELFORMAT_YV12,
     sdl2_pixelformat_iyuv = SDL_PIXELFORMAT_IYUV,
-    sdl2_pixelformat_yuv2 = SDL_PIXELFORMAT_YUY2,
+    sdl2_pixelformat_yuy2 = SDL_PIXELFORMAT_YUY2,
     sdl2_pixelformat_uyvy = SDL_PIXELFORMAT_UYVY,
     sdl2_pixelformat_yvyu = SDL_PIXELFORMAT_YVYU,
     sdl2_pixelformat_nv12 = SDL_PIXELFORMAT_NV12,
